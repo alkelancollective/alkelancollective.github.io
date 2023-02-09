@@ -175,7 +175,7 @@ body{
     width: 49%;
     height: 100vh;
     color: #000;
-    transition: 1s;
+    transition: 0.5s;
     background: var(--hGold);
 }
 
