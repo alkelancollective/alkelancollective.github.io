@@ -1,0 +1,483 @@
+
+
+*{
+    margin: 0;
+    outline: none;
+    border: none;
+    font-family: Garamond, Helvetica;
+    --hGreen: #002b00;
+    --hGreenLt: #3d634e;
+    --hBlue: #4dacac;
+    --hRed: #d42e2e;
+    --hGold: #f1b100;
+
+    --bl: #000;
+    --wh: #fff;
+
+    --alkGold: #d6c794;
+    --alkGreen: #005446;
+    --alkGreenLt: #51c0a6;
+    --alkGreenLt2: #dff6e8;
+    --alkSilver: #e6e7e8;
+    --alkRed: #d23922;
+}
+
+body{
+    background-color: transparent;
+}
+@font-face {
+    font-family: africavibe;
+    src: url('/face/africavibes-7b88w-webfont.woff');
+}
+@font-face {
+    font-family: burowai;
+    src: url('/face/burowairegular-3zvjx-webfont.woff');
+}
+@font-face {
+    font-family: egyptian;
+    src: url('/face/egyptiannights-yaov-webfont.woff');
+}
+@font-face {
+    font-family: spartan;
+    src: url('/face/league-spartan.bold-webfont.woff');
+}
+@font-face {
+    font-family: tribeca;
+    src: url('/face/tribecaregular-d9p6-webfont.woff');
+}
+
+
+@media only screen and (min-width: 500px){
+    .header,.hero,.middle,.end,.footer,.sidebar{
+        display: none;
+    }
+    body{
+        background-color: var(--hGreen);
+    }
+}
+
+.header, .footer{
+    position: relative;
+    width: 100%;
+    height: 8rem;
+    background-color: #fff;
+}
+.footer{
+    background-color: var(--bl);
+}
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+.hero{
+    position: relative;
+    width: 100%;
+    height: 10rem;
+    background-color:var(--hGreen);
+    transition: 1s;
+    color: white;
+    font-style: italic;
+}
+
+.homeText, .homeTextB, .statText, .evolveText{
+    font-family: sans-serif;
+    font-size: 1.33rem;
+}
+.masai{
+    position: absolute;
+    top: 30%; 
+    right: 5%;
+    /* background-color: red; */
+    width: 35%;
+    height: 100%;
+}
+.masai img{
+    width: 110%;
+    height: 80%;
+
+}
+
+
+@media only screen and (max-width:399px) {
+    .homeText, .homeTextB, .homeTextC, .statText, .evolveText, .homeC{
+        font-size: 1.09rem;
+        word-spacing: 1px;
+    }
+}
+
+.homeText, .homeTextB, .homeTextC{
+    position: relative;
+    left: 4%; top: 12%;
+    width: 80%;
+    height: 25%;
+}
+.homeTextB{
+    top: 4%;
+}
+.homeTextC{
+    top: -3%;
+    width: 50%;
+}
+
+.homeC{
+    position: absolute;
+    top: 60%;
+    left: 4%;
+    width: 96%; height: 39%;
+    background-color: var(--hGreen);
+    transition: 0.95s;
+}
+.homeC p{
+    padding-top: 3%;
+    margin-left: 15%;
+}
+
+.statText, .evolveText{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+}
+.evolveText{
+    left: 50%;
+    top: 50%;
+}
+
+.homeText, .homeTextB, .homeTextC, .statText, .evolveText, .homeC p{
+    font-family: spartan;
+    font-family: tribeca;
+}
+
+.middle{
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 15rem;
+}
+.midblock1{
+    width: 90%;
+    left: 5%;
+    position: relative;
+    top: 0;
+    margin-bottom: 1rem;
+    text-align: right;
+    /* background-color: green; */
+}
+.midblock1 h2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: africavibe;
+    text-align: center;
+    letter-spacing: 1px;
+    /* font-size: 1rem; */
+    color: var(--hGold);
+}
+
+.midblock1 p{
+    font-family: spartan;
+    font-size: 1rem;
+}
+.midblock2{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 0.2rem;
+    /* background-color: gray; */
+}
+.midblock2a{
+    position: absolute;
+    top: 0;
+    width: 50%; left: 5%;
+    height: 15rem;
+}
+.midblock2a img{
+    width: 100%;
+}
+.midblock2b{
+    position: absolute;
+    top: 6rem;
+    width: 35%;
+    right: 5%;
+    height: 10rem;
+    color: var(--alkGold);
+}
+.midblock2b p{
+    font-family: garamond;
+}
+
+.end{
+    z-index: -1;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: auto;
+    min-height: 16rem;
+    background-color: var(--hGreenLt);
+    transition: 1s;
+}
+.endblock1{
+    position: relative;
+    top: 16rem;
+    height: 2rem;
+    font-family: egyptian;
+    font-size: 3.1rem;
+    width: 96%;
+    margin: auto;
+    text-align: center;
+}
+
+.features{
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 10rem;
+    padding-bottom: 6rem;
+    margin-bottom: 1rem;
+}
+
+.feat{
+    position: relative;
+    top: 6rem;
+    width: 9rem;
+    height: 7rem;
+    margin-bottom: 1rem;
+    opacity: 0;
+}
+.feat p{
+    font-size: 3.5rem;
+    position: absolute;
+    background-color: var(--alkSilver);
+    width: 150%;
+    font-family: africavibe;
+}
+
+.fonef{
+    left: 30%;
+    background-color: var(--alkGold);
+}
+.fonef p{
+    top: 5%;
+    left: 40%;
+}
+.fonefAnim{
+    animation-name: anim1;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 0.6s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;   
+}
+
+@keyframes anim1{
+    0%{
+        left: 30%;
+        scale: 0.5;
+        opacity: 0;
+    }
+    100%{
+        scale: 1;
+        left: 0;
+        opacity: 1;
+    }
+}
+
+
+.ftwof{
+    left: 20%;
+    background-color: var(--alkGreenLt);
+}
+.ftwof p{
+    top: 5%;
+    left: 40%;
+}
+
+.fonefAnim2{
+    animation-name: anim2;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 0.6s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;   
+}
+@keyframes anim2{
+    0%{
+        left: 40%;
+        scale: 0.5;
+        opacity: 0;
+    }
+    100%{
+        scale: 1;
+        left: 20%;
+        opacity: 1;
+    }
+}
+
+.fthreef{
+    left: 40%;
+    background-color: var(--alkGreen);
+}
+.fthreef p{
+    top: 20%;
+    right: 20%; 
+}
+.fonefAnim3{
+    animation-name: anim3;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;   
+}
+@keyframes anim3{
+    0%{
+        left: 10%;
+        opacity: 0;
+    }
+    100%{
+        scale: 1;
+        left: 40%;
+        opacity: 1;
+    }
+}
+
+.ffourf{
+    left: 20%;
+    background-color: var(--alkRed);
+}
+.ffourf p{
+    bottom: 0;
+    left: 20%;
+}
+
+.fonefAnim4{
+    animation-name: anim4;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 0.6s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;   
+}
+
+@keyframes anim4{
+    0%{
+        left: 60%;
+        scale: 0.5;
+        opacity: 0;
+    }
+    100%{
+        scale: 1;
+        left: 20%;
+        opacity: 1;
+    }
+}
+
+
+/*menu concerns*/
+.mainchick, .theme{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: white;
+    width: 30%;
+    z-index: 3;
+}
+
+#hamburger{
+    scale: 0.25;
+    position: absolute;
+    top: -5%;
+    left: -20%;
+    height: 100%;
+    width: 100%;
+}
+.srg{
+    width: 100%;
+    height: 12%;
+    background-color: #000;
+    margin: 15% 0;
+    transition: 0.4s;
+}
+.flip .ia{
+    transform: translate(0,0.69rem) rotate(-45deg);
+}
+.flip .ib{
+    opacity: 0;
+}
+.flip .ic{
+    transform: translate(0, -0.69rem) rotate(45deg);
+}
+
+/*logo concerns*/
+.logo{
+    position: absolute;
+    width: 40%;
+    background: #fff;
+    height: 100%;
+    top: 0;
+    left: 30%;
+}
+.logo img{
+    width: 100%;
+    height: 99.7%;
+}
+
+/*theme concerns*/
+.theme{
+    left: 71%;
+    opacity: 0;
+    display: none;
+    transition: 0.5s;
+}
+.theme button{
+    background-color: #000;
+    color: #fff;
+    margin-top: 5%;
+    width: 45%;
+    height: 25%;
+}
+.theme  button:active{
+    transform: translateY(2px);
+}
+
+/*sidebar concerns*/
+.sidechick{
+    position: fixed;
+    top: 0; left: -52%;
+    width: 49%;
+    height: 100vh;
+    color: #000;
+    transition: 0.7s;
+    background: var(--alkGold);
+}
+
+.submenu{
+    position: relative;
+    top: 30%;
+    left: 10%;
+    margin-bottom: 5%;
+    width: 70%;
+    height: 7%;
+    font-size: 150%;
+    letter-spacing: 2px;
+}
+.unfold{
+    left: 0;
+}
+#sub5{
+    border: 2px goldenrod outset;
+    padding-bottom: 4%;
+    padding-left: 4%;
+    font-size: 150%;
+    letter-spacing: -1px;
+}
+#sub5:active{
+    border: 2px gray inset;
+}
+.highlight{
+    background-color: var(--hGold);
+}
